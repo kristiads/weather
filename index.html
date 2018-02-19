@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Weather</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.4/js/all.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBkJMD1_etDjCXpjESOcixlKT1_U0QfYh4" async defer></script>
+  <script src="helpers.js"></script>
+  <script src="weather.js"></script>
+</head>
+<body>
+  <div class="container text-center">
+    <div class="row">
+      <div class="col-6 ml-auto mr-auto text-left">
+        <input type="text" id="location-name" class="form-control" placeholder="Where to?">
+        <button id="get-the-weather" class="btn btn-primary mt-1">Get the weather!</button>
+      </div>
+    </div>
+    <div class="row current" style="display:none">
+      <div class="col">
+        <h1 id="current-conditions-icon">
+          <!-- Your code should put something here -->
+        </h1>
+        <h1 id="location">
+          <!-- The provided code puts something here -->
+        </h1>
+        <h2 id="current-conditions-text">
+          <!-- Your code should put something here -->
+        </h2>
+      </div>
+    </div>
+    <div class="row forecast" style="display:none">
+      <!-- Your code should put something here -->
+    </div>
+  </div>
+</body>
+</html>
