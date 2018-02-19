@@ -72,15 +72,16 @@ let handleWeatherResponse = function(response) {
     let dailyForecast = response.daily.data[i];
 
     //getting the day of the daily forecast based on its array
-    //unfortunately, it seems the daily.data.time[0] is not
-    //necessarily 'Today'.
-    let unixTime = dailyForecast.time;
-    let date = new Date(unixTime*1000)
+
+    //unfortunately, it seems the daily.data.time[0] is
+    //not necessarily 'Today'.
     //tried to refer to https://darksky.net/dev/docs#data-block to
     //understand what 'time' in its array is
     //but I still can't know for sure if the day according to the timestamp
     //is correct or not for a forecast
 
+    let unixTime = dailyForecast.time;
+    let date = new Date(unixTime*1000)
     //let day = 'Today'
     //if (i!==0) {
       let day = weekday[date.getDay()]
